@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Método Científico de la Comunicación</title>
+    <link rel="stylesheet" href="choco.css">
+</head>
+<body>
+
+<header>
+    <h1>Método Científico de la Comunicación</h1>
+    <p>Principales teorías de la comunicación de masas</p>
+</header>
+
+<nav>
+    <a href="#metodo">Método Científico</a>
+    <a href="#aguja">Aguja Hipodérmica</a>
+    <a href="#dospasos">Dos Pasos</a>
+</nav>
+
+<section class="hero">
+    <div class="hero-texto">
+        <h2>¿Cómo influyen los medios en la sociedad?</h2>
+        <p>
+            Las teorías de la comunicación intentan explicar cómo los mensajes
+            llegan a las personas y qué efectos producen en ellas.
+        </p>
+    </div>
+</section>
+
+<main>
+
+<section class="card" id="metodo">
+    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3">
+    <div>
+        <h2>Método Científico de la Comunicación</h2>
+
+        <p>
+            El método científico aplicado a la comunicación estudia cómo se
+            transmiten los mensajes y cómo influyen en las personas.
+            Utiliza observación, investigación y análisis para obtener
+            conclusiones basadas en evidencia.
+        </p>
+
+        <button onclick="mostrar('info1')">Leer más</button>
+
+        <div id="info1" class="extra">
+            <p>
+                Gracias a este método se desarrollaron numerosas teorías que
+                explican el comportamiento del público frente a la radio,
+                televisión, periódicos e internet.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="card" id="aguja">
+    <img src="https://images.unsplash.com/photo-1495020689067-958852a7765e">
+    <div>
+        <h2>Teoría de la Aguja Hipodérmica</h2>
+
+        <p>
+            Considera que los medios tienen un gran poder para influir sobre
+            las personas. Los mensajes son recibidos de forma directa y
+            producen efectos inmediatos.
+        </p>
+
+        <button onclick="mostrar('info2')">Leer más</button>
+
+        <div id="info2" class="extra">
+            <ul>
+                <li>El público es considerado pasivo.</li>
+                <li>Los medios tienen mucho poder.</li>
+                <li>Fue utilizada para explicar la propaganda.</li>
+                <li>Surgió a comienzos del siglo XX.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="card" id="dospasos">
+    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f">
+    <div>
+        <h2>Teoría de los Dos Pasos</h2>
+
+        <p>
+            Paul Lazarsfeld propuso que los medios no influyen directamente
+            sobre todas las personas. Primero influyen en líderes de opinión,
+            quienes luego transmiten los mensajes a otros individuos.
+        </p>
+
+        <button onclick="mostrar('info3')">Leer más</button>
+
+        <div id="info3" class="extra">
+            <ul>
+                <li>Existen líderes de opinión.</li>
+                <li>La influencia es indirecta.</li>
+                <li>Las relaciones sociales son importantes.</li>
+                <li>La comunicación ocurre en dos etapas.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="conclusion">
+    <h2>Conclusión</h2>
+    <p>
+        Las teorías de la comunicación permiten comprender cómo funcionan los
+        medios y cómo influyen en la sociedad. Mientras que la Aguja
+        Hipodérmica plantea una influencia directa, la Teoría de los Dos
+        Pasos destaca el papel de los líderes de opinión y las relaciones
+        interpersonales.
+    </p>
+</section>
+
+</main>
+
+<footer>
+    <p>Trabajo Práctico - Comunicación y Sociedad</p>
+</footer>
+
+<script>
+function mostrar(id){
+    let elemento = document.getElementById(id);
+
+    if(elemento.style.display === "block"){
+        elemento.style.display = "none";
+    }else{
+        elemento.style.display = "block";
+    }
+}
+</script>
+
+</body>
+</html>
